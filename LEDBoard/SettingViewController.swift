@@ -38,10 +38,8 @@ class SettingViewController: UIViewController {
             self.changeBackgroundColor(color: .orange)
         }
     }
-    
     @IBAction func tabSaveButton(_ sender: UIButton) {
     }
-    
     private func changeTextColor(color: UIColor){
         self.yellowButton.alpha = color == UIColor.yellow ? 1 : 0.2
         self.purpleButton.alpha = color == UIColor.purple ? 1 : 0.2

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "6865BD09-CD19-4FD2-BD3D-0EC07D75EB8E"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6329F87B-CF20-49C5-8E36-361DE81150C1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LEDBoard/SettingViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "SettingViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "6329F87B-CF20-49C5-8E36-361DE81150C1 - d47eb53de4e8d67f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LEDBoard.SettingViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; LEDBoard.SettingViewController"
+                  moduleName = "LEDBoard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yesung/Desktop/Swift_study/LEDBoard/SettingViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "6329F87B-CF20-49C5-8E36-361DE81150C1 - 74d0eb2eedc57922"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LEDBoard.SettingViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; LEDBoard.SettingViewController"
+                  moduleName = "LEDBoard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yesung/Desktop/Swift_study/LEDBoard/SettingViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "6329F87B-CF20-49C5-8E36-361DE81150C1 - f9c5201afa459bb6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LEDBoard.SettingViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;LEDBoard.SettingViewController&gt;"
+                  moduleName = "LEDBoard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yesung/Desktop/Swift_study/LEDBoard/SettingViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "6329F87B-CF20-49C5-8E36-361DE81150C1 - 6d950204870db839"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LEDBoard.SettingViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;LEDBoard.SettingViewController&gt;"
+                  moduleName = "LEDBoard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yesung/Desktop/Swift_study/LEDBoard/SettingViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "6329F87B-CF20-49C5-8E36-361DE81150C1 - abdb071b2b0e1f2e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LEDBoard.SettingViewController.__deallocating_deinit"
+                  moduleName = "LEDBoard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yesung/Desktop/Swift_study/LEDBoard/SettingViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

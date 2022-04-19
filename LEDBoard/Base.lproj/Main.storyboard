@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RuB-Nm-bsV">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -11,7 +11,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LEDBoard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -33,8 +32,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="Cre-qh-yc9">
                         <barButtonItem key="rightBarButtonItem" title="설정" id="JVa-2K-zJB">
+                            <color key="tintColor" systemColor="linkColor"/>
                             <connections>
-                                <segue destination="5lG-hw-wtk" kind="show" id="YpI-Hi-HWK"/>
+                                <segue destination="5lG-hw-wtk" kind="show" id="xjE-1M-OaL"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -42,6 +42,7 @@
                         <outlet property="contentsLabel" destination="4WK-Is-Bj4" id="yar-Nf-5vD"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="457.97101449275368" y="111.83035714285714"/>
         </scene>
@@ -195,7 +196,6 @@
         <!--Navigation Controller-->
         <scene sceneID="EOT-j2-xLg">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="E5B-k3-7dI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="RuB-Nm-bsV" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2ym-Nt-RyZ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -208,6 +208,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="CTJ-0v-b2x"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E5B-k3-7dI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-474" y="112"/>
         </scene>
@@ -219,6 +220,9 @@
         <image name="orange_circle" width="32" height="32"/>
         <image name="purple_circle" width="32" height="32"/>
         <image name="yellow_circle" width="32" height="32"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

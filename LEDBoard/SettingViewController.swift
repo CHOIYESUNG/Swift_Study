@@ -19,6 +19,8 @@ class SettingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .light
+
     }
     @IBAction func tabTextColorButton(_ sender: UIButton) {
         if sender == self.yellowButton{
@@ -50,5 +52,6 @@ class SettingViewController: UIViewController {
         self.blueButton.alpha = color == UIColor.blue ? 1 : 0.2
         self.orangeButton.alpha = color == UIColor.orange ? 1 : 0.2
     }
+    
     
 }

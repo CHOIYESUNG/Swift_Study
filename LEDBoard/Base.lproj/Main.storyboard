@@ -88,7 +88,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8N-yS-7EZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="yellow_circle"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="yellow_circle" title=""/>
                                                 <connections>
                                                     <action selector="tabTextColorButton:" destination="5lG-hw-wtk" eventType="touchUpInside" id="Lwk-24-kc6"/>
                                                 </connections>
@@ -98,7 +98,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="purple_circle"/>
                                                 <connections>
-                                                    <action selector="tabTextColorButton:" destination="5lG-hw-wtk" eventType="touchUpInside" id="dmK-eg-QWj"/>
+                                                    <action selector="tabTextColorButton:" destination="5lG-hw-wtk" eventType="touchUpInside" id="adE-yU-z3Y"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rI-Zo-ged">
@@ -158,7 +158,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="저장"/>
                                 <connections>
-                                    <action selector="tabSaveButton:" destination="5lG-hw-wtk" eventType="touchUpInside" id="mmv-fD-m66"/>
+                                    <action selector="tabSaveButton:" destination="5lG-hw-wtk" eventType="touchUpInside" id="KEE-3f-sJf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -180,18 +180,18 @@
                     </view>
                     <navigationItem key="navigationItem" title="설정" id="Gfe-4P-4BU"/>
                     <connections>
-                        <outlet property="blackButton" destination="SZ1-pk-yur" id="xLb-nl-6d4"/>
+                        <outlet property="blackButton" destination="09Q-fm-dQr" id="aaU-VD-fVY"/>
                         <outlet property="blueButton" destination="qrV-VL-qNS" id="AE7-JO-CcT"/>
-                        <outlet property="greenButton" destination="8rI-Zo-ged" id="ULw-ir-BRT"/>
+                        <outlet property="greenButton" destination="8rI-Zo-ged" id="HdX-5P-Swf"/>
                         <outlet property="orangeButton" destination="JJR-V6-e3Z" id="sbn-QR-Kb1"/>
-                        <outlet property="purpleButton" destination="LkK-JM-e1I" id="4kR-fF-J4P"/>
-                        <outlet property="textField" destination="0IT-Pj-LHR" id="22L-kK-PsW"/>
-                        <outlet property="yellowButton" destination="U8N-yS-7EZ" id="0Ds-lh-NiE"/>
+                        <outlet property="purpleButton" destination="LkK-JM-e1I" id="bRA-ym-JuF"/>
+                        <outlet property="textField" destination="GHA-0N-COu" id="86d-A5-nH5"/>
+                        <outlet property="yellowButton" destination="U8N-yS-7EZ" id="vEA-z4-wws"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IYH-e9-ZTJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1300" y="112"/>
+            <point key="canvasLocation" x="1298.5507246376812" y="111.83035714285714"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EOT-j2-xLg">

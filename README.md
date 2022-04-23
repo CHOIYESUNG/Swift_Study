@@ -1,2 +1,2 @@
 # Swift_study
-UIkit
+UIkit, storyboard 공부

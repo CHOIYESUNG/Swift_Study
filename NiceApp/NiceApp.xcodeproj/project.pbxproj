@@ -13,6 +13,8 @@
 		06E903EC2897E9B00019C9E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06E903EA2897E9B00019C9E5 /* Main.storyboard */; };
 		06E903EE2897E9B20019C9E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06E903ED2897E9B20019C9E5 /* Assets.xcassets */; };
 		06E903F12897E9B20019C9E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06E903EF2897E9B20019C9E5 /* LaunchScreen.storyboard */; };
+		06F1D57B289820E100A9133E /* 12358-christmas-loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 06F1D57A289820E100A9133E /* 12358-christmas-loading.json */; };
+		AC00A0CE19EC56680BC68FB0 /* Pods_NiceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15E4E78749C061616458B7A /* Pods_NiceApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		06E903ED2897E9B20019C9E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06E903F02897E9B20019C9E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06E903F22897E9B20019C9E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06F1D57A289820E100A9133E /* 12358-christmas-loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "12358-christmas-loading.json"; sourceTree = "<group>"; };
+		59DDC6EE13F28832B940ED6B /* Pods-NiceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiceApp.debug.xcconfig"; path = "Target Support Files/Pods-NiceApp/Pods-NiceApp.debug.xcconfig"; sourceTree = "<group>"; };
+		808340B4E90BDE55D0BABB75 /* Pods-NiceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiceApp.release.xcconfig"; path = "Target Support Files/Pods-NiceApp/Pods-NiceApp.release.xcconfig"; sourceTree = "<group>"; };
+		A15E4E78749C061616458B7A /* Pods_NiceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NiceApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC00A0CE19EC56680BC68FB0 /* Pods_NiceApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,9 +47,10 @@
 		06E903D82897E9B00019C9E5 = {
 			isa = PBXGroup;
 			children = (
-				06E903F82897EA3C0019C9E5 /* ViewControllers */,
 				06E903E32897E9B00019C9E5 /* NiceApp */,
 				06E903E22897E9B00019C9E5 /* Products */,
+				19A12779A4A532F138E29561 /* Pods */,
+				B6EFF8434CDC9D48E752E873 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,12 +65,14 @@
 		06E903E32897E9B00019C9E5 /* NiceApp */ = {
 			isa = PBXGroup;
 			children = (
+				06E903F82897EA3C0019C9E5 /* ViewControllers */,
 				06E903E42897E9B00019C9E5 /* AppDelegate.swift */,
 				06E903E62897E9B00019C9E5 /* SceneDelegate.swift */,
 				06E903EA2897E9B00019C9E5 /* Main.storyboard */,
 				06E903ED2897E9B20019C9E5 /* Assets.xcassets */,
 				06E903EF2897E9B20019C9E5 /* LaunchScreen.storyboard */,
 				06E903F22897E9B20019C9E5 /* Info.plist */,
+				06F1D57A289820E100A9133E /* 12358-christmas-loading.json */,
 			);
 			path = NiceApp;
 			sourceTree = "<group>";
@@ -75,6 +85,23 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		19A12779A4A532F138E29561 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59DDC6EE13F28832B940ED6B /* Pods-NiceApp.debug.xcconfig */,
+				808340B4E90BDE55D0BABB75 /* Pods-NiceApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B6EFF8434CDC9D48E752E873 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A15E4E78749C061616458B7A /* Pods_NiceApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06E903F52897E9B20019C9E5 /* Build configuration list for PBXNativeTarget "NiceApp" */;
 			buildPhases = (
+				213ED96298DF31B0F0C09DFA /* [CP] Check Pods Manifest.lock */,
 				06E903DD2897E9B00019C9E5 /* Sources */,
 				06E903DE2897E9B00019C9E5 /* Frameworks */,
 				06E903DF2897E9B00019C9E5 /* Resources */,
+				9DA3908755310F2818D16355 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,12 +163,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				06E903F12897E9B20019C9E5 /* LaunchScreen.storyboard in Resources */,
+				06F1D57B289820E100A9133E /* 12358-christmas-loading.json in Resources */,
 				06E903EE2897E9B20019C9E5 /* Assets.xcassets in Resources */,
 				06E903EC2897E9B00019C9E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		213ED96298DF31B0F0C09DFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NiceApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DA3908755310F2818D16355 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NiceApp/Pods-NiceApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NiceApp/Pods-NiceApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NiceApp/Pods-NiceApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		06E903DD2897E9B00019C9E5 /* Sources */ = {
@@ -290,6 +362,7 @@
 		};
 		06E903F62897E9B20019C9E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59DDC6EE13F28832B940ED6B /* Pods-NiceApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,6 +391,7 @@
 		};
 		06E903F72897E9B20019C9E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 808340B4E90BDE55D0BABB75 /* Pods-NiceApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

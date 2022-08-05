@@ -65,7 +65,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZq-4x-YHa">
-                                        <rect key="frame" x="107" y="681" width="176" height="31"/>
+                                        <rect key="frame" x="107.33333333333333" y="681" width="175.66666666666669" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Don't have an account?"/>
                                         <connections>
@@ -80,7 +80,6 @@
                                     <constraint firstItem="YPG-Du-gFb" firstAttribute="centerX" secondItem="PL0-mt-yN2" secondAttribute="centerX" id="QLe-Of-Wrt"/>
                                     <constraint firstAttribute="trailing" secondItem="8pB-ve-yqL" secondAttribute="trailing" constant="20" id="R4W-q8-hK9"/>
                                     <constraint firstItem="YPG-Du-gFb" firstAttribute="centerX" secondItem="PL0-mt-yN2" secondAttribute="centerX" id="RoA-rc-7xc"/>
-                                    <constraint firstItem="cZq-4x-YHa" firstAttribute="leading" secondItem="PL0-mt-yN2" secondAttribute="leading" constant="107" id="Xd9-ef-Q1Q"/>
                                     <constraint firstItem="8pB-ve-yqL" firstAttribute="leading" secondItem="PL0-mt-yN2" secondAttribute="leading" constant="20" id="Xdr-cV-11w"/>
                                     <constraint firstItem="YPG-Du-gFb" firstAttribute="top" secondItem="PL0-mt-yN2" secondAttribute="top" constant="30" id="byJ-3f-tUB"/>
                                     <constraint firstItem="cZq-4x-YHa" firstAttribute="centerX" secondItem="PL0-mt-yN2" secondAttribute="centerX" id="gk3-lQ-wE9"/>

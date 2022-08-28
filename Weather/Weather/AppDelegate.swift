@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Diary
+//  Weather
 //
-//  Created by Y3SUNG on 2022/08/26.
+//  Created by Y3SUNG on 2022/08/29.
 //
 
 import UIKit

@@ -192,11 +192,98 @@
                             <constraint firstItem="MD7-XH-4mY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zuj-Br-bGP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="td3-tf-5Fy"/>
+                    <navigationItem key="navigationItem" id="td3-tf-5Fy">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="02z-qj-MAP">
+                            <connections>
+                                <segue destination="VTa-mB-bkJ" kind="show" id="Y14-Ra-zMO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="807" y="-421"/>
+        </scene>
+        <!--일기 작성-->
+        <scene sceneID="qrz-Hb-wxE">
+            <objects>
+                <viewController id="VTa-mB-bkJ" customClass="WriteDiaryViewController" customModule="Diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AM1-pz-HPz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDO-L2-Ram">
+                                <rect key="frame" x="24" y="112" width="366" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CuE-iN-k7Q">
+                                <rect key="frame" x="24" y="145" width="366" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoA-v9-bAS">
+                                <rect key="frame" x="24" y="203" width="366" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eMw-wR-CRU">
+                                <rect key="frame" x="24" y="236" width="366" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="b8Q-wS-tSv"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="날짜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2z-sp-Q8m">
+                                <rect key="frame" x="24" y="360" width="366" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nLA-ah-4tD">
+                                <rect key="frame" x="24" y="393" width="366" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eLQ-2g-Pb7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eLQ-2g-Pb7" firstAttribute="trailing" secondItem="j2z-sp-Q8m" secondAttribute="trailing" constant="24" id="4cD-9e-8Qf"/>
+                            <constraint firstItem="eMw-wR-CRU" firstAttribute="leading" secondItem="eLQ-2g-Pb7" secondAttribute="leading" constant="24" id="4n7-kJ-4fM"/>
+                            <constraint firstItem="j2z-sp-Q8m" firstAttribute="top" secondItem="eMw-wR-CRU" secondAttribute="bottom" constant="24" id="6uh-wO-D2d"/>
+                            <constraint firstItem="j2z-sp-Q8m" firstAttribute="leading" secondItem="eLQ-2g-Pb7" secondAttribute="leading" constant="24" id="8mY-Vq-H9D"/>
+                            <constraint firstItem="qoA-v9-bAS" firstAttribute="leading" secondItem="eLQ-2g-Pb7" secondAttribute="leading" constant="24" id="B7o-yy-van"/>
+                            <constraint firstItem="eMw-wR-CRU" firstAttribute="top" secondItem="qoA-v9-bAS" secondAttribute="bottom" constant="12" id="Di9-Gq-dN2"/>
+                            <constraint firstItem="j2z-sp-Q8m" firstAttribute="top" secondItem="eMw-wR-CRU" secondAttribute="bottom" constant="24" id="Owc-Pv-r4M"/>
+                            <constraint firstItem="eLQ-2g-Pb7" firstAttribute="trailing" secondItem="nLA-ah-4tD" secondAttribute="trailing" constant="24" id="S9a-mP-vWN"/>
+                            <constraint firstItem="eLQ-2g-Pb7" firstAttribute="trailing" secondItem="qoA-v9-bAS" secondAttribute="trailing" constant="24" id="TYd-Vc-kkS"/>
+                            <constraint firstItem="eLQ-2g-Pb7" firstAttribute="trailing" secondItem="CuE-iN-k7Q" secondAttribute="trailing" constant="24" id="TrW-MM-cYK"/>
+                            <constraint firstItem="qoA-v9-bAS" firstAttribute="top" secondItem="CuE-iN-k7Q" secondAttribute="bottom" constant="24" id="aOy-kC-mpk"/>
+                            <constraint firstItem="eLQ-2g-Pb7" firstAttribute="trailing" secondItem="eMw-wR-CRU" secondAttribute="trailing" constant="24" id="eDh-FE-KF9"/>
+                            <constraint firstItem="CuE-iN-k7Q" firstAttribute="top" secondItem="eDO-L2-Ram" secondAttribute="bottom" constant="12" id="eZd-aF-ojj"/>
+                            <constraint firstItem="j2z-sp-Q8m" firstAttribute="leading" secondItem="eLQ-2g-Pb7" secondAttribute="leading" constant="24" id="ejV-Ob-WwM"/>
+                            <constraint firstItem="nLA-ah-4tD" firstAttribute="leading" secondItem="eLQ-2g-Pb7" secondAttribute="leading" constant="24" id="hMn-fy-nWO"/>
+                            <constraint firstItem="eLQ-2g-Pb7" firstAttribute="trailing" secondItem="eDO-L2-Ram" secondAttribute="trailing" constant="24" id="jcV-Ir-VEy"/>
+                            <constraint firstItem="nLA-ah-4tD" firstAttribute="top" secondItem="j2z-sp-Q8m" secondAttribute="bottom" constant="12" id="pDq-Lj-26u"/>
+                            <constraint firstItem="CuE-iN-k7Q" firstAttribute="leading" secondItem="eLQ-2g-Pb7" secondAttribute="leading" constant="24" id="q8u-rI-VbE"/>
+                            <constraint firstItem="eDO-L2-Ram" firstAttribute="top" secondItem="eLQ-2g-Pb7" secondAttribute="top" constant="24" id="y7Y-oG-vMJ"/>
+                            <constraint firstItem="eLQ-2g-Pb7" firstAttribute="trailing" secondItem="j2z-sp-Q8m" secondAttribute="trailing" constant="24" id="ySn-R5-94l"/>
+                            <constraint firstItem="eDO-L2-Ram" firstAttribute="leading" secondItem="eLQ-2g-Pb7" secondAttribute="leading" constant="24" id="znf-tC-FN4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="일기 작성" id="jcF-81-mHM">
+                        <barButtonItem key="rightBarButtonItem" title="등록" id="AXC-C2-DCk"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y5c-MG-UWZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1618.840579710145" y="-421.20535714285711"/>
         </scene>
     </scenes>
     <resources>
@@ -204,6 +291,9 @@
         <image name="folder.fill" catalog="system" width="128" height="97"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

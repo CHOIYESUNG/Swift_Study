@@ -61,7 +61,7 @@ class ViewController: UIViewController {
                     self?.configureView(weatherInformation: weatherInformation)
                 }
             } else {
-                guard let errorMessage = try? decoder.decode(ErrorMessage.self, from: data) else { return 
+                guard let errorMessage = try? decoder.decode(ErrorMessage.self, from: data) else { return }
                 DispatchQueue.main.async {
                     self?.showAlert(message: errorMessage.message)
                 }

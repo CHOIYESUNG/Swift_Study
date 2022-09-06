@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -52,8 +51,8 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDz-UL-jaK">
-                                                    <rect key="frame" x="302" y="15" width="34" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="306.5" y="16.5" width="29.5" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -67,6 +66,7 @@
                                             <constraints>
                                                 <constraint firstItem="PDz-UL-jaK" firstAttribute="centerY" secondItem="MEO-h1-5mr" secondAttribute="centerY" id="4co-4N-PIA"/>
                                                 <constraint firstItem="OuU-Ke-e9d" firstAttribute="baseline" secondItem="MEO-h1-5mr" secondAttribute="firstBaseline" id="9xs-Ot-XNv"/>
+                                                <constraint firstItem="PDz-UL-jaK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OuU-Ke-e9d" secondAttribute="trailing" constant="8" symbolic="YES" id="GHl-Ec-KWU"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="PDz-UL-jaK" secondAttribute="trailing" constant="10" id="WiH-dB-VVT"/>
                                                 <constraint firstItem="MEO-h1-5mr" firstAttribute="centerY" secondItem="t1e-NP-6Ty" secondAttribute="centerY" id="b9h-lR-u6s"/>
                                                 <constraint firstItem="MEO-h1-5mr" firstAttribute="top" secondItem="t1e-NP-6Ty" secondAttribute="topMargin" constant="-4" id="hIL-ZT-0ic"/>
@@ -82,7 +82,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ToDoin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AG3-Sx-e25">
                                 <rect key="frame" x="24" y="89" width="101" height="47"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
-                                <color key="textColor" name="AccentColor"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -101,19 +101,78 @@
                     </view>
                     <navigationItem key="navigationItem" id="9F8-Q6-fHy">
                         <barButtonItem key="leftBarButtonItem" style="plain" systemItem="edit" id="Z5X-wm-Nrv"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="lfG-nE-YwT"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="lfG-nE-YwT">
+                            <connections>
+                                <segue destination="Gc7-cG-1Ny" kind="show" id="LaO-SE-aIu"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9J4-T5-BHV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="91.741071428571431"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="wKK-jz-xYC">
+            <objects>
+                <viewController id="Gc7-cG-1Ny" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dW2-x4-cAU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Todo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QAF-eq-YmY">
+                                <rect key="frame" x="15" y="98" width="384" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="UUA-xS-56o">
+                                <rect key="frame" x="10" y="149" width="389" height="31"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Irr-ib-tPJ">
+                                <rect key="frame" x="343.5" y="190" width="55.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Save"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="N2A-Qy-GuI">
+                                <rect key="frame" x="20" y="149" width="160.5" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Show Widget" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84C-Sz-Mbh">
+                                        <rect key="frame" x="0.0" y="0.0" width="101.5" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Udh-Tr-RKV">
+                                        <rect key="frame" x="111.5" y="0.0" width="51" height="31"/>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yod-aV-XKy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="N2A-Qy-GuI" firstAttribute="top" secondItem="QAF-eq-YmY" secondAttribute="bottom" constant="17" id="5d7-h5-2uN"/>
+                            <constraint firstItem="UUA-xS-56o" firstAttribute="leading" secondItem="dW2-x4-cAU" secondAttribute="leading" constant="10" id="Abh-RG-ngD"/>
+                            <constraint firstItem="UUA-xS-56o" firstAttribute="top" secondItem="QAF-eq-YmY" secondAttribute="bottom" constant="17" id="BsC-2u-Wdp"/>
+                            <constraint firstItem="UUA-xS-56o" firstAttribute="trailing" secondItem="QAF-eq-YmY" secondAttribute="trailing" id="J0Z-bd-wjO"/>
+                            <constraint firstItem="Irr-ib-tPJ" firstAttribute="top" secondItem="UUA-xS-56o" secondAttribute="bottom" constant="10" id="K7w-sj-ohY"/>
+                            <constraint firstItem="QAF-eq-YmY" firstAttribute="top" secondItem="yod-aV-XKy" secondAttribute="top" constant="10" id="QQj-57-pfQ"/>
+                            <constraint firstItem="yod-aV-XKy" firstAttribute="trailing" secondItem="QAF-eq-YmY" secondAttribute="trailing" constant="15" id="T1x-XR-Lub"/>
+                            <constraint firstItem="yod-aV-XKy" firstAttribute="trailing" secondItem="Irr-ib-tPJ" secondAttribute="trailing" constant="15" id="TOq-4z-KNQ"/>
+                            <constraint firstItem="Irr-ib-tPJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yod-aV-XKy" secondAttribute="leading" symbolic="YES" id="YSu-mJ-Dpw"/>
+                            <constraint firstItem="N2A-Qy-GuI" firstAttribute="leading" secondItem="dW2-x4-cAU" secondAttribute="leadingMargin" id="bAZ-fq-EQ9"/>
+                            <constraint firstItem="QAF-eq-YmY" firstAttribute="leading" secondItem="yod-aV-XKy" secondAttribute="leading" constant="15" id="cCj-1W-yeL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CKa-D5-tg5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PoD-15-9NT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756.52173913043487" y="91.741071428571431"/>
+        </scene>
     </scenes>
     <resources>
         <image name="timer" catalog="system" width="128" height="121"/>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

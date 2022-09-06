@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		061B5DF528C4FBD700B224BF /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061B5DF428C4FBD700B224BF /* Task.swift */; };
 		0646CF1828B301CE00AD1814 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0646CF1728B301CE00AD1814 /* AppDelegate.swift */; };
 		0646CF1A28B301CE00AD1814 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0646CF1928B301CE00AD1814 /* SceneDelegate.swift */; };
 		0646CF1C28B301CE00AD1814 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0646CF1B28B301CE00AD1814 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		061B5DF428C4FBD700B224BF /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		0646CF1428B301CE00AD1814 /* ToDoin_UIkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoin_UIkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0646CF1728B301CE00AD1814 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0646CF1928B301CE00AD1814 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				0646CF2028B301CF00AD1814 /* Assets.xcassets */,
 				0646CF2228B301CF00AD1814 /* LaunchScreen.storyboard */,
 				0646CF2528B301CF00AD1814 /* Info.plist */,
+				061B5DF428C4FBD700B224BF /* Task.swift */,
 			);
 			path = ToDoin_UIkit;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				061B5DF528C4FBD700B224BF /* Task.swift in Sources */,
 				0646CF1C28B301CE00AD1814 /* ViewController.swift in Sources */,
 				0646CF1828B301CE00AD1814 /* AppDelegate.swift in Sources */,
 				0646CF1A28B301CE00AD1814 /* SceneDelegate.swift in Sources */,

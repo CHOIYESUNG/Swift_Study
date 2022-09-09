@@ -8,7 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var EditButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

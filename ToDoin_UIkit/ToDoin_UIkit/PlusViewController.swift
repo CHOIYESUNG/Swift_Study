@@ -13,11 +13,7 @@ class PlusViewController: UIViewController {
     @IBOutlet weak var deadlineDate: UIDatePicker!
     @IBOutlet weak var saveButton: UIButton!
     
-    var tasks = [Task]() {
-        didSet {
-            self.tabSaveButton()
-        }
-    }
+    var tasks = [Task]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,16 +25,8 @@ class PlusViewController: UIViewController {
         debugPrint("\(inputTodo.text!)")
         debugPrint("\(saveButton.isSelected)")
         debugPrint("\(deadlineDate.date)")
-        let data = self.tasks.map  {
-            [
-                inputTodo.text: $0.title,
-                deadlineDate.date: $0.time
-            ]
-        }
-        let userDefaults = UserDefaults.standard
-        userDefaults.set(data, forKey: "tasks")
+        tasks.append(Task(title: inputTodo.text!, date: deadlineDate.date, isShowWidget: showWidget.isOn))
         
-        debugPrint(data)
+        self.navigationController?.popViewController(animated: true)
     }
-    
 }
